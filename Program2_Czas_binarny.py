@@ -1,5 +1,14 @@
 import datetime
 
 data = datetime.datetime.now()
-data = (str(data.hour) + ":" + str(data.minute))
-print(data)
+hours = data.hour
+minutes = data.minute
+
+print (str(hours)+":"+str(minutes))
+
+hours = bin(hours)[2:]
+minutes = bin(minutes)[2:]
+
+print (str(hours) + ":" + str(minutes))
+
+
